@@ -2,10 +2,10 @@
 
 const Assembly = require('@mapbox/assembly');
 
-const myOptions = [
 
+const myOptions = [
 ];
 
-Assembly.buildUserAssets('/Users/Jonny/Documents/-irisProcess/Builds/Assembly/Source Build', myOptions)
-  .then(() => console.log() /* something */)
-  .catch((err) => console.log(nope) /* handle error */);
+Assembly.buildUserAssets('/Users/Jonny/Documents/GitHub/metastream-app/dist/assets/assembly_custom', myOptions)
+  .then(() => console.log("Done building assembly, great job!") /* something */)
+  .catch((err) => console.log("nope") /* handle error */);
